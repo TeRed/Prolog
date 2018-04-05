@@ -27,6 +27,14 @@ rodzina(
 	]
 	).
 
+rodzina(
+	osoba(janusz, kurek, data(5,lipiec,1960), pracuje(szpital,300)),
+	osoba(ola, kurek, data(17,maj,1957), pracuje(pogotowie,2500)),
+	[
+		osoba(iza, kurek, data(22,lipiec,1983), bezrobocie)
+	]
+	).
+
 % zaleznosci
 
 maz(X) :-
@@ -82,3 +90,6 @@ nalezy(X,[_|Yogon]) :-
 % znaleźć osoby urodzone przed 1950 r, których pensja jest mniejsza niż 3000
 % istnieje(X),data_urodzenia(X,data(_,_,U)),U<1950,pensja(X,P),P<3000.
 % Alternatywnie@ istnieje(osoba(X,Y,data(_,_,U),pracuje(_,P))),U < 1950,P < 3000.
+
+% Wszystkie osoby pracujace w kiosku
+% istnieje(osoba(X,Y,data(_,_,_),pracuje(kiosk,_))).
