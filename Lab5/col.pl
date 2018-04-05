@@ -5,8 +5,8 @@ kolor(niebieski).
 panstwo(polska).
 panstwo(bialorus).
 panstwo(ukraina).
-% panstwo(slowacja).
-% panstwo(czechy).
+panstwo(slowacja).
+panstwo(czechy).
 
 sasiad(polska,bialorus).
 sasiad(polska,ukraina).
